@@ -1,0 +1,45 @@
+body {
+    background-color: red;
+}
+
+header {
+    padding: 20px;
+
+    align-content: center;
+    color: rgb(45, 41, 49);
+    text-align: center;
+}
+
+.row{
+    margin: auto;
+    padding: 20px;
+    width: 90%;
+    /* background-color: blueviolet; */
+    display: flex;
+    justify-content: space-around;
+}
+
+.character {
+    border-radius: 50%;
+    min-width: 100px;
+    min-height: 100px;
+    max-width: 150px;
+    max-height: 150px;
+    background-color: white;
+    box-shadow: 5px 10px 8px;
+    display: flex;
+    justify-content: center
+}
+
+.character:hover{
+    transform: scale(1.09);
+}
+.character:active{
+    transform: scale(1)
+}
+
+img {
+    border-radius: 50%;
+    max-width: 100%;
+    max-height: 100%;
+}
