@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+
+nav {
+    padding: 2px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    color: white;
+    list-style: none;
+}
+
+nav ul li {
+    text-align: center;
+    padding: 5px;
+    margin: 0px 10px;
+}
+
+nav ul li:hover {
+    background-color: black
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+body {
+    background-color: #Ed1D24;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    padding: 20px;
+    align-content: center;
+    color: rgb(45, 41, 49);
+    text-align: center;
+}
+.row{
+    margin: auto;
+    padding: 20px;
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.container {
+  position: relative;
+  width: 10%;
+  border-radius: 10%;
+  min-width: 250px;
+  min-height: 250px;
+  max-width: 250px;
+  max-height: 150px;
+  background-color: white;
+  box-shadow: 5px 10px 8px;
+  display: flex;
+  justify-content: center
+}
+
+.container:hover{
+    transform: scale(1.09); 
+}
+
+.container:active{
+    transform: scale(1)
+}
+.image {
+  border-radius: 10%;
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  border-radius: 10px 10px 20px 20px;
+  position: absolute;
+  bottom: 10%;
+  left: 0;
+  right: 0;
+  background-color: #Ed1D24;
+  overflow: hidden;
+  width: 100%;
+  height:0;
+  transition: .5s ease;
+}
+
+.container:hover .overlay {
+  bottom: 0;
+  height: 25%;
+}
+
+.text {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.text:hover{
+  color:black;
+}
+
+a:link {
+    color: green; 
+    background-color: transparent; 
+    text-decoration: none;
+}
+
+a:visited {
+    color: pink;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:hover {
+    color: red;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:active {
+    color: yellow;
+    background-color: transparent;
+    text-decoration: none;
+}
+</style>
+</head>
+<header>       <nav>
+    <ul>
+        <li><a href="">Stories</a></li>
+        <li><a href="characters_js.html">Characters</a></li>
+        <li><a href="">Movies</a></li>
+        <li><a href="">Our Team</a></li>
+    </ul>
+</nav>
+<h1>Characters</h1>
+<h3>With the library of over 8000 characters created by Marvel, here are some of the most popular ones</h3></header>
+<body>
+
+<div class="row">
+  <div class="container">
+      <a href="https://www.marvel.com/characters/deadpool-wade-wilson" target="_blank"><img src="art/deadpool.jpg" alt="Deadpool" class="image"></a>
+    <div class="overlay">
+      <div class="text">Deadpool</div>
+    </div>
+  </div>
+
+  <div class="container">
+      <a href="https://www.marvel.com/characters/spider-man-peter-parker" target="_blank"><img src="art/spiderman.jpg" alt="Spider-Man" class="image"></a>
+      <div class="overlay">
+        <div class="text">Spider-Man</div>
+      </div>
+    </div>
+
+    <div class="container">
+        <a href="https://www.marvel.com/characters/captain-america-steve-rogers" target="_blank"><img src="art/cptamerica.jpg" alt="Captain America" class="image"></a>
+        <div class="overlay">
+          <div class="text">Captain America</div>
+        </div>
+      </div>
+  </div>
+
+  <div class="row">
+      <div class="container">
+          <a href="https://www.marvel.com/characters/black-panther-t-challa" target="_blank"><img src="art/blackpanther.jpg" alt="Black Panther" class="image"></a>
+        <div class="overlay">
+          <div class="text">Black Panther</div>
+        </div>
+      </div>
+    
+      <div class="container">
+          <a href="https://www.marvel.com/characters/iron-man-tony-stark" target="_blank"><img src="art/ironman.jpg" alt="Iron Man" class="image"></a>
+          <div class="overlay">
+            <div class="text">Iron Man</div>
+          </div>
+        </div>
+    
+        <div class="container">
+            <a href="https://www.marvel.com/characters/wolverine-james-howlett" target="_blank"><img src="art/wolverine.jpg" alt="Wolverine" class="image"></a>
+            <div class="overlay">
+              <div class="text">Wolverine</div>
+            </div>
+          </div>
+      </div>
+</body>
+</html>
