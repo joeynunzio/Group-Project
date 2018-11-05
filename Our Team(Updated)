@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+img {border-radius: 50%;}
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 25%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: rgb(2, 128, 247);
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: rgb(158, 1, 22);
+}
+</style>
+</head>
+<body style="background-color:#b8dbf8">
+
+<h2 align="center" style="background-color:DodgerBlue; color:white">Our Team Section</h2>
+<h4 align="center">Web developers project  |  Fall 2018</h4>
+<br>
+
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="JoeCartoon.jpg" alt="Joe" style="width:100%">
+      <div class="container">
+        <h2 align="center">Joe</h2>
+        <p align="center" class="title">Computer Graphic Major</p>
+        <p>Senior student majoring in Computer Graphic and Images (CGI)</p>
+        <p>jsiciliano@lehman.cuny.edu</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="PawelCartoon.jpg" alt="Pawel" style="width:100%">
+      <div class="container">
+        <h2 align="center">Pawel</h2>
+        <p align="center" class="title">Computer Science Major</p>
+        <p>Senior student majoring in Computer Science (CS)</p>
+        <p>psmith@lehman.cuny.edu</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <img src="jesusCartoon.jpg" alt="Jesus" style="width:100%">
+      <div class="container">
+        <h2 align="center">Jesus</h2>
+        <p align="center" class="title">Computer Graphic Major</p>
+        <p>Senior student majoring in Computer Graphic and Images (CGI)</p>
+        <p>jmedina@lehman.cuny.edu</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <img src="RuthMejiaCartoon.jpg" alt="Jesus" style="width:100%">
+      <div class="container">
+        <h2 align="center">Ruth</h2>
+        <p align="center" class="title">Computer Graphic Major</p>
+        <p>Senior student majoring in Computer Graphic and Images (CGI)</p>
+        <p>rmejia@lehman.cuny.edu</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
