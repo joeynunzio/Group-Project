@@ -17,6 +17,17 @@ display: flex;
 justify-content: space-around;
 }
 
+header img {
+    height: 80px;
+    width: auto;
+    padding-right: 18%;
+}
+
+header {
+    display: flex;
+}
+
+
 .container {
 position: relative;
 width: 10%;
@@ -100,8 +111,4 @@ a:active {
 color: yellow;
 background-color: transparent;
 text-decoration: none;
-}
-
-h1, h3{
-    font-family: 'Oswald', sans-serif;
 }
